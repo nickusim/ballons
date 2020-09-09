@@ -1,0 +1,376 @@
+*{
+    font-family: 'Marmelad', sans-serif;
+    color: #314988;
+}
+
+body{
+    background: linear-gradient(#787FBF, #D1F4FF) no-repeat;
+    
+}
+
+.main{
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    right: 25%;
+    bottom: 15%;
+    z-index: -1;
+
+    background: url(../img/balloons.png) no-repeat;
+    background-size: 70%;
+    background-position: right;
+    filter: blur(2px);
+}
+
+.main-title .title{
+    text-align: center;
+}
+
+.main-title .title h1{
+    margin-bottom: 0;
+    font-size: 8em;
+}
+
+.main-title .title h2{
+    margin-bottom: 1em;
+    font-size: 3em;
+}
+
+.main-title .title span{
+    display: block;
+    margin: auto;
+    width: 12em;
+    font-size: 2.5em;
+}
+
+a .logo{
+    background: url(../img/svg/logo.svg) no-repeat;
+    width: 5em;
+    height: 5.5em;
+    background-size: 95%;
+}
+
+.nav{
+    margin-right: 5rem;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.2rem;
+}
+
+.nav .element{
+    text-decoration: none;
+    margin-left: 2.3rem;
+}
+
+.nav .element li{
+    color: #EFD0AE;
+}
+
+.nav .element li:hover{
+    color: #BBBBBB;
+}
+
+.arrow-row{
+    position: relative;
+    bottom: -5%;
+}
+
+.arrow-row .arrow{
+    text-align: center;
+}
+.ballon-1,.ballon-2,.ballon-3,.ballon-4{
+    position: absolute;
+    background-position: center;
+    z-index: -1;
+}
+
+.ballon-1{
+    left: 10%;
+    top: 10%;
+    transform: rotateZ(-20deg);
+
+    width: 6%;
+    height: 30%;
+    background: url(../img/orange.png) no-repeat;
+    background-size: 70%;
+    filter: blur(2px);
+}
+.ballon-2{
+    left: 15%;
+    top: 15%;
+    transform: rotateZ(20deg);
+    width: 10%;
+    height: 30%;
+    background: url(../img/pink.png) no-repeat;
+    background-size: 90%;
+    filter: blur(2.2px);
+}
+
+.ballon-3{
+    left: 5%;
+    bottom: -20%;
+    z-index: 99;
+    transform: rotateZ(-10deg);
+    width: 22%;
+    height: 60%;
+    background: url(../img/violet.png) no-repeat;
+    background-size: 90%;
+    filter: blur(4px);
+}
+
+.ballon-4{
+    right: 5%;
+    top: 10%;
+    transform: rotateZ(-10deg);
+    width: 15%;
+    height: 40%;
+    background: url(../img/pink.png) no-repeat;
+    background-size: 90%;
+    filter: blur(1px);
+}
+
+.catalog{
+    text-align: center;
+}
+
+.catalog p a{
+    font-size: 2em;
+    text-decoration: none;
+    color: #314988;
+    padding: .4rem;
+    border: #314982 solid 3px;
+    border-radius: 1rem;
+}
+
+.sticky{
+    position: sticky;
+    top: 5%;
+}
+
+.sticky .links{
+    list-style: none;
+}
+
+.sticky .links a{
+    text-decoration: none;
+}
+
+.sticky .links a li.link{
+    font-size: 1.3rem;
+    letter-spacing: 0.025em;
+    font-weight: 500;
+    margin-bottom: .7rem;
+}
+
+.sticky .links a li.link:hover{
+    color: #1A2646;
+}
+
+.advantages{
+    height: 30rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantages .advantage{
+    display: inline-flex;
+    align-items: center;
+}
+
+.advantages .advantage .check{
+    margin-right: 1em;
+}
+
+.advantages .advantage span.text{
+    font-size: 1.5rem;
+}
+
+.why-us h2.title{
+    font-size: 3rem;
+    text-align: start;
+}
+
+.why-us .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.why-us .text span{
+    font-size: 1.4rem;
+}
+
+.why-us .img-сelebration img{
+    position: relative;
+    top: 45rem;
+    width: 70%;
+    z-index: -99;
+}
+
+.contact-us h2.title{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.contact-us .contacts .contact ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.contact-us .contacts .contact ul a{
+    text-decoration: none;
+}
+
+.contact-us .contacts .contact ul li{
+    display: inline-flex;
+    align-items: center;
+}
+
+.contact-us .contacts .contact ul li .svg{
+    margin-right: 1.1rem;
+}
+
+.contact-us .contacts .contact ul li span{
+    font-size: 1.5rem;
+    color: #1A2646;
+}
+
+.adresses .title{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.adresses .adress{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.adresses .adress .text{
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.adresses .map{
+    height: 20rem;
+}
+
+
+.maked{
+    text-align: end;
+}
+
+.maked a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.maked span{
+    color: #5180FF;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .ballon-3{
+        bottom: -35%;
+    }
+    .main{
+        width: 100%;
+        height: 100%;
+        right: 15%;
+    }
+
+    .main-title{
+        height: 50vh;
+    }
+
+    .main-title .title h1{
+        margin-bottom: 0;
+        font-size: 2.6em;
+    }
+    
+    .main-title .title h2{
+        margin-bottom: 1em;
+        font-size: 1.7em;
+    }
+    
+    .main-title .title span{
+        display: block;
+        margin: auto;
+        width: 12em;
+        font-size: 1.3em;
+    }
+
+    .catalog p a{
+        font-size: 1.2em;
+    }
+    .catalog .show .card ul{
+        margin-right: 0;
+    }
+
+    .why-us h2.title{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .why-us .text span{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .why-us .img-сelebration img{
+        display: block;
+        margin: auto;
+    }
+
+    .contact-us h2.title{
+        font-size: 2rem;
+    }
+    .contact-us .contacts .contact ul li span{
+        font-size: 1rem;
+    }
+
+    .adresses .title{
+        font-size: 2rem;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .main-title .title h1{
+        margin-bottom: 0;
+        font-size: 3.4em;
+    }
+    
+    .main-title .title h2{
+        margin-bottom: 1em;
+        font-size: 3em;
+    }
+    
+    .main-title .title span{
+        display: block;
+        margin: auto;
+        width: 12em;
+        font-size: 2.5em;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .nav{
+        font-size: 1rem;
+    }
+    .nav .element{
+        margin-left: 1.5rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
